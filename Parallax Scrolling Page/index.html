@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moon Light Parallax Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <img src="bg.jpg" id="bg">
+      <img src="moon.png" id="moon">
+      <img src="mountain.png" id="mountain">
+      <img src="road.png" id="road">
+      <h2 id="text">Moon Light</h2>
+    </section>
+
+    <text-section>
+      <div class="circle circle1">
+        <img src="santa.jpg">
+      </div>
+      <div class="circle circle2">
+        <img src="natsumi.jpg">
+      </div>
+      <div>
+        <h2>Wrap Text Around Circle #2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae suscipit asperiores, nemo doloribus ea consequuntur dicta vel mollitia, excepturi in ipsum eum. Rerum ad assumenda doloribus architecto odio inventore magni.</p>
+      </div>
+    </text-section>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+      })
+    </script>
+  </body>
+  
+</html>
