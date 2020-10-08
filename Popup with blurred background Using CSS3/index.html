@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mordal practice</title>
+</head>
+<body>
+  <div class="container" id="blur">
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam dicta voluptatibus minus excepturi totam impedit temporibus.</h2>
+      <img src="img.jpg">
+      <a href="#" onClick="toggle()">Read More</a>
+    </div>
+  </div>
+  <div id="popup">
+    <h2>Home Study</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque. Error iure ullam perferendisLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque. Error iure ullam perferendisLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque. Error iure ullam perferendisLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque. Error iure ullam perferendis </p>
+    <a href="#" onClick="toggle()">Close</a>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active');
+
+      var popup = document.getElementById('popup');
+      popup.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
